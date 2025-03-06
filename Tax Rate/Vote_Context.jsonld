@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "Cardano's tax rate of 20% was never intended to stay at 20% forever - like all parameters it needs to be adjusted over time to account for system growth.\n\nArbitrarily set at 20%, this tax rate helped us grow a massive treasury that can now be used to fund substantial innovation for our blockchain.\n\nNow that we have a large reserve to work with, we need to address the issue of market competition. Cardano is not in the number 3 spot, there are many other products we are competing for in the financial market space.\n\nWhen interest rates were absurdly low, an annual return of ~3% seemed very good compared to what was being offered by banks, but this is no longer the case.\n\nCardano is primarily an investment product - that is where the majority of its value is derived, and why people buy it and hold it long term. \n\nLowering the tax rate on ADA will incentivize further investment by increasing delegator rewards for everyone, especially in a market saturated with other options offering high ROI. \n\nI am also of the mindset that higher taxation does not equal better improvements or experience for governments or blockchains.\n\nLeaner taxation means that ADA holders (the people who the blockchain is beholden to), get to decide what they'd like to do with their ADA (instead of governments) and I believe this is the right decision for both Cardano and with fiat governments.\n\nA lower tax rate also means that we will need to be more efficient with government spending, and more critical of what is being allocated for in each budget. \n\nConsidering the spending put forth in the budget for Cardano 2025, it is already evident that overspending is an issue that needs more oversight going forward.\n\nAccountable spending is a challenge fiat governments cannot manage to accomplish today, and we need to solve for this on Cardano early so that we do not fall into the same trap. Lower taxation helps remedy this issue."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
