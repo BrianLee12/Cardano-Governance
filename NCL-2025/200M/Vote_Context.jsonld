@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting yes for this NCL proposal, as it falls within my personal NCL of 200-250 Million ADA.\n\nI think this proposed NCL is fiscally responsible based on the budget proposals we have seen from all submitting members.\n\nI believe it is extremely important to be prudent with our spending in this first year of ADA governance, and I have not been convinced that a spend limit of more than 250 Million ADA is justified in any way.\n\nIf a NCL proposal of 250 Million ADA is at some point proposed, I will vote yes for that as well, but this proposal satisfies my desires for fiscal responsibility.\n\nThank you to the proposers who worked together to make this happen and were able to get a NCL that has community support submitted past the unnecessarily high submission threshold of a 100,000 ADA deposit."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
